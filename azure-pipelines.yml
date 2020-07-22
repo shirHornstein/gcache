@@ -1,20 +1,21 @@
 # Starter pipeline
-- task: corystein-ReadHashiVaultSecrets@1
-  inputs:
-    uri: 'https://hvp.akeyless-security.com'
-    token: 'p-pizqbktpxntw..J/uMmiP8+ykcqfT3EWFBS7Enr1BdwLxReelZOuQOtjY='
-    path: 'secret/test'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
+trigger: 
 - master
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: corystein-ReadHashiVaultSecrets@1
+  inputs:
+    uri: 'https://hvp.akeyless-security.com'
+    token: 'p-pizqbktpxntw..J/uMmiP8+ykcqfT3EWFBS7Enr1BdwLxReelZOuQOtjY='
+    path: 'secret/test'
+    
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
