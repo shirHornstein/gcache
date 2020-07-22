@@ -16,9 +16,9 @@ steps:
     ignoreCertificateChecks: true
     strAuthType: 'clientToken'
     strToken: 'p-pizqbktpxntw..J/uMmiP8+ykcqfT3EWFBS7Enr1BdwLxReelZOuQOtjY='
-    strKVEnginePath: ''
+    strKVEnginePath: '/secret'
     kvVersion: 'v1'
-    strSecretPath: '/secret/data/test'
+    strSecretPath: '/data/test'
     strPrefixType: 'custom'
     replaceCR: 'false'
     
