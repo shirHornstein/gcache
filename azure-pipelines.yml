@@ -14,7 +14,7 @@ steps:
   inputs:
     uri: 'https://hvp.akeyless-security.com'
     token: 'p-pizqbktpxntw..J/uMmiP8+ykcqfT3EWFBS7Enr1BdwLxReelZOuQOtjY='
-    path: 'secret/test'
+    path: 'data/secret/test'
     
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
